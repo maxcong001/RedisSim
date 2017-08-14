@@ -40,14 +40,18 @@ class TimerManager
 	Timer::ptr_p getTimer(int *timerID = NULL);
 	bool killTimer(int timerID);
 
+	TimerManager *Instance()
+	{
+		static TimerManager *ins = new TimerManager();
+		return ins;
+	}
+
   protected:
   private:
 	int getUniqueID()
 	{
 		return (uniqueID_atomic++);
 	}
-
-	//std::lock_guard<std::mutex> lck(mtx);
 
 	std::atomic<int> uniqueID_atomic;
 	std::unordered_map<int, Timer::ptr_p> t_map;

@@ -24,6 +24,8 @@ bool TimerManager::init()
 	audit_timer = new Timer(_loop);
 	audit_timer->startForever(AUDIT_TIMER, [this] {
 		// is this right?
+		std::lock_guard<std::mutex> lck(mtx);
+
 		for_each(t_map.begin(), t_map.end(), [&](std::pair<const int, Timer::ptr_p> &i) {
 			if ((i.second)->isFinished())
 			{
@@ -38,6 +40,7 @@ Timer::ptr_p TimerManager::getTimer(int *timerID)
 {
 	int tid = getUniqueID();
 	Timer::ptr_p tmp_ptr(new Timer(_loop));
+	std::lock_guard<std::mutex> lck(mtx);
 	t_map.emplace(tid, tmp_ptr);
 	*timerID = tid;
 	return tmp_ptr;
@@ -45,6 +48,8 @@ Timer::ptr_p TimerManager::getTimer(int *timerID)
 // you can call timer.stop or pass in the ID and we will kill the timer
 bool TimerManager::killTimer(int timerID)
 {
+	std::lock_guard<std::mutex> lck(mtx);
+
 	auto iter = t_map.find(timerID);
 	if (iter != t_map.end())
 	{
