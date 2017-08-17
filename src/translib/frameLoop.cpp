@@ -1,10 +1,3 @@
-/*
- * FrameLoop.cpp
- *
- *  Created on: 2016年7月11日
- *      Author: 
- */
-
 #include "translib/frameLoop.h"
 #include "translib/timer.h"
 

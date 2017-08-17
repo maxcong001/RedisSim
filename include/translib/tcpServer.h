@@ -1,12 +1,4 @@
-/*
- * tcpServer.h
- *
- *  Created on: 2015年6月22日
- *      Author: 
- */
-
-#ifndef INCLUDE_EC_TCPSERVER_H_
-#define INCLUDE_EC_TCPSERVER_H_
+#pragma once
 
 #include <string>
 #include <map>
@@ -91,4 +83,4 @@ private:
 
 } /* namespace translib */
 
-#endif /* INCLUDE_EC_TCPSERVER_H_ */
+

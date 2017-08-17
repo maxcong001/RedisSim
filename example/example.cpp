@@ -1,10 +1,4 @@
-//============================================================================
-// Name        : test.cpp
-// Author      :
-// Version     :
-// Copyright   :
-// Description : Hello World in C++, Ansi-style
-//============================================================================
+
 #include <iostream>
 #include <string>
 #include <map>
@@ -65,7 +59,6 @@ int main(int argc, char *argv[])
 	auto rs_f = std::bind(&RSim::redisSim::init, &rs);
 	std::thread sim_thread(rs_f);
 	sim_thread.detach();
-
 	sleep(1);
 
 	//simulator client thread
@@ -79,15 +72,14 @@ int main(int argc, char *argv[])
 	loop.start(true);
 	sleep(1);
 
-	//  just for test.
+	//  just for test. start a forwarder
 	RSim::forwarder_conn_info tmp = RSim::forwarder_conn_info("127.0.0.1", "2568", "127.0.0.1", "2565");
 	std::string tmp_str = tmp.seralize();
 	std::string message = RSim::pack_msg_c2s(RSim::ADD_FORWARDER, tmp_str.c_str(), (uint32_t)tmp_str.size());
 	__LOG(debug, "message after pack is " << message);
-
 	sc.send(message.c_str(), (uint32_t)(message.size()));
-
 	sleep(1);
+
 	// now start the APP client
 	Loop loop1;
 	__LOG(debug, "now start the APP client");

@@ -1,12 +1,4 @@
-/*
- * define.h
- *
- *  Created on: 2015年5月30日
- *      Author: 
- */
-
-#ifndef INCLUDE_EC_DEFINE_H_
-#define INCLUDE_EC_DEFINE_H_
+#pragma once
 
 #include <functional>
 #include <algorithm>
@@ -41,4 +33,4 @@ typedef std::lock_guard<std::recursive_mutex> MutexLock;
 
 } /* namespace translib */
 
-#endif /* INCLUDE_EC_DEFINE_H_ */
+

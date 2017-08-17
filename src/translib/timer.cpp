@@ -1,9 +1,4 @@
-/*
- * timer.cpp
- *
- *  Created on: 2015年5月31日
- *      Author: 
- */
+
 
 #include "translib/timer.h"
 #include "translib/loop.h"

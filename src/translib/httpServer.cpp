@@ -1,10 +1,3 @@
-/*
- * httpServer.cpp
- *
- *  Created on: 2015年7月7日
- *      Author: 
- */
-
 #include "translib/httpServer.h"
 #include <string.h>
 #include <vector>

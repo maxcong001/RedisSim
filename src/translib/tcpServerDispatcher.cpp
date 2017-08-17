@@ -1,9 +1,4 @@
-/*
- * tcpServerDispatcher.cpp
- *
- *  Created on: 2015年6月25日
- *      Author: 
- */
+
 
 #include "translib/tcpServerDispatcher.h"
 #include "translib/tcpServer.h"

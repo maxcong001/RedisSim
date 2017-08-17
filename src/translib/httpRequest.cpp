@@ -1,9 +1,3 @@
-/*
- * httpRequest.cpp
- *
- *  Created on: 2015年7月7日
- *      Author: 
- */
 
 #include "translib/httpRequest.h"
 

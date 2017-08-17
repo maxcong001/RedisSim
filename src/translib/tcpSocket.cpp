@@ -1,9 +1,4 @@
-/*
- * tcpSocket.cpp
- *
- *  Created on: 2015年6月24日
- *      Author: 
- */
+
 
 #include "translib/tcpSocket.h"
 #include <event2/buffer.h>

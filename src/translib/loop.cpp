@@ -1,9 +1,3 @@
-/*
- * loop.cpp
- *
- *  Created on: 2015年5月30日
- *      Author: 
- */
 
 #include "translib/loop.h"
 

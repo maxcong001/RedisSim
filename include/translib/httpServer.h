@@ -1,12 +1,4 @@
-/*
- * httpServer.h
- *
- *  Created on: 2015年7月7日
- *      Author: 
- */
-
-#ifndef INCLUDE_EC_HTTPSERVER_H_
-#define INCLUDE_EC_HTTPSERVER_H_
+#pragma once
 
 #include <string>
 #include <map>
@@ -43,4 +35,4 @@ private:
 
 } /* namespace translib */
 
-#endif /* INCLUDE_EC_HTTPSERVER_H_ */
+

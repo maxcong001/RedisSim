@@ -1,12 +1,4 @@
-/*
- * FrameLoop.h
- *
- *  Created on: 2016年7月11日
- *      Author: 
- */
-
-#ifndef INCLUDE_EC_FRAMELOOP_H_
-#define INCLUDE_EC_FRAMELOOP_H_
+#pragma once
 
 #include "translib/loop.h"
 
@@ -54,4 +46,3 @@ private:
 
 
 
-#endif /* INCLUDE_EC_FRAMELOOP_H_ */

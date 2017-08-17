@@ -1,13 +1,4 @@
-/*
- * tcpClient.h
- *
- *  Created on: 2015年6月25日
- *      Author: 
- */
-
-#ifndef INCLUDE_EC_TCPCLIENT_H_
-#define INCLUDE_EC_TCPCLIENT_H_
-
+#pragma once
 #include "translib/tcpSocket.h"
 #include "translib/loop.h"
 
@@ -49,4 +40,4 @@ private:
 } /* namespace translib */
 
 
-#endif /* INCLUDE_EC_TCPCLIENT_H_ */
+

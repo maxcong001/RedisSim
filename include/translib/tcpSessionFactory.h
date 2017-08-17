@@ -1,12 +1,6 @@
-/*
- * tcpSessionFactory.h
- *
- *  Created on: 2016年7月12日
- *      Author: 
- */
 
-#ifndef INCLUDE_EC_TCPSESSIONFACTORY_H_
-#define INCLUDE_EC_TCPSESSIONFACTORY_H_
+
+#pragma once
 
 #include "translib/tcpSession.h"
 
@@ -27,5 +21,3 @@ public:
 } /* namespace translib */
 
 
-
-#endif /* INCLUDE_EC_TCPSESSIONFACTORY_H_ */

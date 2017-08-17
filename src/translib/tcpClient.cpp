@@ -1,9 +1,3 @@
-/*
- * tcpClient.cpp
- *
- *  Created on: 2015年6月25日
- *      Author: 
- */
 
 
 #include "translib/tcpClient.h"

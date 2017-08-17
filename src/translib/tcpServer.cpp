@@ -1,9 +1,4 @@
-/*
- * tcpServer.cpp
- *
- *  Created on: 2015年6月22日
- *      Author: 
- */
+
 
 #include "translib/tcpServer.h"
 

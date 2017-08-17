@@ -1,9 +1,3 @@
-/*
- * timer.h
- *
- *  Created on: 2015年5月31日
- *      Author: 
- */
 
 #include "translib/timerManager.h"
 #include "logger/logger.h"

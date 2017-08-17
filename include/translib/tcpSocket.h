@@ -1,12 +1,5 @@
-/*
- * tcpSocket.h
- *
- *  Created on: 2015年6月24日
- *      Author: 
- */
 
-#ifndef INCLUDE_EC_TCPSOCKET_H_
-#define INCLUDE_EC_TCPSOCKET_H_
+#pragma once
 
 #include <atomic>
 #include <event2/bufferevent.h>
@@ -68,4 +61,4 @@ class TcpSocket
 
 } /* namespace translib */
 
-#endif /* INCLUDE_EC_TCPSOCKET_H_ */
+

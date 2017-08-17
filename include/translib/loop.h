@@ -1,13 +1,4 @@
-/*
- * loop.h
- *
- *  Created on: 2015年5月30日
- *      Author: 
- */
-
-#ifndef INCLUDE_EC_LOOP_H_
-#define INCLUDE_EC_LOOP_H_
-
+#pragma once
 
 #include <map>
 #include "translib/define.h"
@@ -114,4 +105,3 @@ private:
 
 } /* namespace translib */
 
-#endif /* INCLUDE_EC_LOOP_H_ */

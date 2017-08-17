@@ -1,13 +1,4 @@
-/*
- * timer.h
- *
- *  Created on: 2015年5月31日
- *      Author: 
- */
-
-#ifndef EC_TIMER_H_
-#define EC_TIMER_H_
-
+#pragma once
 #include "loop.h"
 #include <memory>
 
@@ -107,4 +98,4 @@ class Timer
 
 } /* namespace translib */
 
-#endif /* EC_TIMER_H_ */
+

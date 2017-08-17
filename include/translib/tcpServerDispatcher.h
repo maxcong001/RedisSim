@@ -1,12 +1,4 @@
-/*
- * tcpServerDispatcher.h
- *
- *  Created on: 2015年6月25日
- *      Author: 
- */
-
-#ifndef INCLUDE_EC_TCPSERVERDISPATCHER_H_
-#define INCLUDE_EC_TCPSERVERDISPATCHER_H_
+#pragma once
 
 #include <queue>
 #include "translib/frameLoop.h"
@@ -61,4 +53,3 @@ private:
 
 
 
-#endif /* INCLUDE_EC_TCPSERVERDISPATCHER_H_ */

@@ -1,12 +1,4 @@
-/*
- * tcpSession.h
- *
- *  Created on: 2015年6月22日
- *      Author: 
- */
-
-#ifndef INCLUDE_EC_TCPSESSION_H_
-#define INCLUDE_EC_TCPSESSION_H_
+#pragma once
 
 #include "translib/tcpSocket.h"
 
@@ -69,4 +61,3 @@ typedef std::shared_ptr<TcpSession> TcpSessionPtr;
 } /* namespace translib */
 
 
-#endif /* INCLUDE_EC_TCPSESSION_H_ */
