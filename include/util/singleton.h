@@ -1,8 +1,6 @@
 #pragma once
 /*
  * Copyright (c) 2016-20017 Max Cong <savagecm@qq.com>
- * this code can be found at
- * https://github.com/maxcong001/design_pattern/edit/master/include/singleton/singleton.hpp
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
  * are met:
