@@ -166,154 +166,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-example/CMakeFiles/_MaxEC_example.dir/rule:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/_MaxEC_example.dir/rule
-.PHONY : example/CMakeFiles/_MaxEC_example.dir/rule
+example/CMakeFiles/_MaxRedisSim_example.dir/rule:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/_MaxRedisSim_example.dir/rule
+.PHONY : example/CMakeFiles/_MaxRedisSim_example.dir/rule
 
 # Convenience name for target.
-_MaxEC_example: example/CMakeFiles/_MaxEC_example.dir/rule
+_MaxRedisSim_example: example/CMakeFiles/_MaxRedisSim_example.dir/rule
 
-.PHONY : _MaxEC_example
+.PHONY : _MaxRedisSim_example
 
 # fast build rule for target.
-_MaxEC_example/fast:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/build
-.PHONY : _MaxEC_example/fast
+_MaxRedisSim_example/fast:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxRedisSim_example.dir/build.make example/CMakeFiles/_MaxRedisSim_example.dir/build
+.PHONY : _MaxRedisSim_example/fast
 
-httpExample.o: httpExample.cpp.o
+example.o: example.cpp.o
 
-.PHONY : httpExample.o
-
-# target to build an object file
-httpExample.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/httpExample.cpp.o
-.PHONY : httpExample.cpp.o
-
-httpExample.i: httpExample.cpp.i
-
-.PHONY : httpExample.i
-
-# target to preprocess a source file
-httpExample.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/httpExample.cpp.i
-.PHONY : httpExample.cpp.i
-
-httpExample.s: httpExample.cpp.s
-
-.PHONY : httpExample.s
-
-# target to generate assembly for a file
-httpExample.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/httpExample.cpp.s
-.PHONY : httpExample.cpp.s
-
-tcpExample.o: tcpExample.cpp.o
-
-.PHONY : tcpExample.o
+.PHONY : example.o
 
 # target to build an object file
-tcpExample.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/tcpExample.cpp.o
-.PHONY : tcpExample.cpp.o
+example.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxRedisSim_example.dir/build.make example/CMakeFiles/_MaxRedisSim_example.dir/example.cpp.o
+.PHONY : example.cpp.o
 
-tcpExample.i: tcpExample.cpp.i
+example.i: example.cpp.i
 
-.PHONY : tcpExample.i
-
-# target to preprocess a source file
-tcpExample.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/tcpExample.cpp.i
-.PHONY : tcpExample.cpp.i
-
-tcpExample.s: tcpExample.cpp.s
-
-.PHONY : tcpExample.s
-
-# target to generate assembly for a file
-tcpExample.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/tcpExample.cpp.s
-.PHONY : tcpExample.cpp.s
-
-test.o: test.cpp.o
-
-.PHONY : test.o
-
-# target to build an object file
-test.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/test.cpp.o
-.PHONY : test.cpp.o
-
-test.i: test.cpp.i
-
-.PHONY : test.i
+.PHONY : example.i
 
 # target to preprocess a source file
-test.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/test.cpp.i
-.PHONY : test.cpp.i
+example.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxRedisSim_example.dir/build.make example/CMakeFiles/_MaxRedisSim_example.dir/example.cpp.i
+.PHONY : example.cpp.i
 
-test.s: test.cpp.s
+example.s: example.cpp.s
 
-.PHONY : test.s
-
-# target to generate assembly for a file
-test.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/test.cpp.s
-.PHONY : test.cpp.s
-
-timerExample.o: timerExample.cpp.o
-
-.PHONY : timerExample.o
-
-# target to build an object file
-timerExample.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/timerExample.cpp.o
-.PHONY : timerExample.cpp.o
-
-timerExample.i: timerExample.cpp.i
-
-.PHONY : timerExample.i
-
-# target to preprocess a source file
-timerExample.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/timerExample.cpp.i
-.PHONY : timerExample.cpp.i
-
-timerExample.s: timerExample.cpp.s
-
-.PHONY : timerExample.s
+.PHONY : example.s
 
 # target to generate assembly for a file
-timerExample.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/timerExample.cpp.s
-.PHONY : timerExample.cpp.s
-
-timerManagerExample.o: timerManagerExample.cpp.o
-
-.PHONY : timerManagerExample.o
-
-# target to build an object file
-timerManagerExample.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/timerManagerExample.cpp.o
-.PHONY : timerManagerExample.cpp.o
-
-timerManagerExample.i: timerManagerExample.cpp.i
-
-.PHONY : timerManagerExample.i
-
-# target to preprocess a source file
-timerManagerExample.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/timerManagerExample.cpp.i
-.PHONY : timerManagerExample.cpp.i
-
-timerManagerExample.s: timerManagerExample.cpp.s
-
-.PHONY : timerManagerExample.s
-
-# target to generate assembly for a file
-timerManagerExample.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/timerManagerExample.cpp.s
-.PHONY : timerManagerExample.cpp.s
+example.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f example/CMakeFiles/_MaxRedisSim_example.dir/build.make example/CMakeFiles/_MaxRedisSim_example.dir/example.cpp.s
+.PHONY : example.cpp.s
 
 # Help Target
 help:
@@ -328,22 +220,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... _MaxEC_example"
-	@echo "... httpExample.o"
-	@echo "... httpExample.i"
-	@echo "... httpExample.s"
-	@echo "... tcpExample.o"
-	@echo "... tcpExample.i"
-	@echo "... tcpExample.s"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
-	@echo "... timerExample.o"
-	@echo "... timerExample.i"
-	@echo "... timerExample.s"
-	@echo "... timerManagerExample.o"
-	@echo "... timerManagerExample.i"
-	@echo "... timerManagerExample.s"
+	@echo "... _MaxRedisSim_example"
+	@echo "... example.o"
+	@echo "... example.i"
+	@echo "... example.s"
 .PHONY : help
 
 

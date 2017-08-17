@@ -1,4 +1,4 @@
-#include "redisSim.h"
+#include "redisSim/simCommandServer.h"
 
 namespace RSim
 {

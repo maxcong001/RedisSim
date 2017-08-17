@@ -205,30 +205,30 @@ example/fast:
 .PHONY : example/fast
 
 #=============================================================================
-# Target rules for targets named MaxEC
+# Target rules for targets named MaxRedisSim
 
 # Build rule for target.
-MaxEC: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MaxEC
-.PHONY : MaxEC
+MaxRedisSim: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MaxRedisSim
+.PHONY : MaxRedisSim
 
 # fast build rule for target.
-MaxEC/fast:
-	$(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/build
-.PHONY : MaxEC/fast
+MaxRedisSim/fast:
+	$(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/build
+.PHONY : MaxRedisSim/fast
 
 #=============================================================================
-# Target rules for targets named _MaxEC_example
+# Target rules for targets named _MaxRedisSim_example
 
 # Build rule for target.
-_MaxEC_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _MaxEC_example
-.PHONY : _MaxEC_example
+_MaxRedisSim_example: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _MaxRedisSim_example
+.PHONY : _MaxRedisSim_example
 
 # fast build rule for target.
-_MaxEC_example/fast:
-	$(MAKE) -f example/CMakeFiles/_MaxEC_example.dir/build.make example/CMakeFiles/_MaxEC_example.dir/build
-.PHONY : _MaxEC_example/fast
+_MaxRedisSim_example/fast:
+	$(MAKE) -f example/CMakeFiles/_MaxRedisSim_example.dir/build.make example/CMakeFiles/_MaxRedisSim_example.dir/build
+.PHONY : _MaxRedisSim_example/fast
 
 # Help Target
 help:
@@ -246,8 +246,8 @@ help:
 	@echo "... cleanup"
 	@echo "... memcheck"
 	@echo "... example"
-	@echo "... MaxEC"
-	@echo "... _MaxEC_example"
+	@echo "... MaxRedisSim"
+	@echo "... _MaxRedisSim_example"
 .PHONY : help
 
 

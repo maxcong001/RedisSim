@@ -11,13 +11,12 @@
 namespace translib
 {
 
-Timer::Timer(const translib::Loop &loop) :
-		_loop(loop),
-		_event(NULL),
-		_interval(0),
-		_round(1),
-		_curRound(0),
-		_handler(NULL)
+Timer::Timer(const translib::Loop &loop) : _loop(loop),
+										   _event(NULL),
+										   _interval(0),
+										   _round(1),
+										   _curRound(0),
+										   _handler(NULL)
 {
 }
 
@@ -27,9 +26,10 @@ Timer::~Timer()
 }
 
 bool Timer::startRounds(
-		uint32_t interval,
-		uint64_t round,
-		translib::Timer::Handler handler)
+	uint32_t interval,
+	uint64_t round,
+	void *usrdata,
+	translib::Timer::Handler handler)
 {
 	if (NULL != _event)
 	{
@@ -44,8 +44,8 @@ bool Timer::startRounds(
 
 	struct timeval tv = {};
 	evutil_timerclear(&tv);
-	tv.tv_sec = interval/1000;
-	tv.tv_usec = interval%1000*1000;
+	tv.tv_sec = interval / 1000;
+	tv.tv_usec = interval % 1000 * 1000;
 
 	if (0 != event_add(_event, &tv))
 	{
@@ -57,28 +57,30 @@ bool Timer::startRounds(
 	_round = round;
 	_curRound = 0;
 	_handler = handler;
+	_usrdata = usrdata;
 
 	return true;
 }
 
-bool Timer::startOnce(uint32_t interval, translib::Timer::Handler handler)
+bool Timer::startOnce(uint32_t interval, void *usrdata, translib::Timer::Handler handler)
 {
-	return startRounds(interval, 1, handler);
+	return startRounds(interval, 1, usrdata, handler);
 }
 
-bool Timer::startForever(uint32_t interval, translib::Timer::Handler handler)
+bool Timer::startForever(uint32_t interval, void *usrdata, translib::Timer::Handler handler)
 {
-	return startRounds(interval, uint32_t(-1), handler);
+	return startRounds(interval, uint32_t(-1), usrdata, handler);
 }
 
 bool Timer::startAfter(
-		uint32_t after,
-		uint32_t interval,
-		uint64_t round,
-		translib::Timer::Handler handler)
+	uint32_t after,
+	uint32_t interval,
+	uint64_t round,
+	void *usrdata,
+	translib::Timer::Handler handler)
 {
-	return startOnce(after, [=]() {
-		startRounds(interval, round, handler);
+	return startOnce(after, usrdata, [=](void *usrdataa) {
+		startRounds(interval, round, usrdataa, handler);
 	});
 }
 
@@ -103,7 +105,7 @@ void Timer::eventHandler(evutil_socket_t fd, short events, void *ctx)
 		timer->reset();
 	}
 
-	handler();
+	handler(timer->_usrdata);
 }
 
 } /* namespace translib */

@@ -55,7 +55,7 @@ include CMakeFiles/memcheck.dir/progress.make
 
 CMakeFiles/memcheck:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mcong/study/github/RedisSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Check memory usage with valgrind"
-	cd /home/mcong/study/github/RedisSim/build/bin && command -v valgrind >/dev/null 2>&1 && valgrind -v --leak-check=full --show-reachable=yes --undef-value-errors=yes --track-origins=yes --num-callers=50 ./MaxEC_example
+	cd /home/mcong/study/github/RedisSim/build/bin && command -v valgrind >/dev/null 2>&1 && valgrind -v --leak-check=full --show-reachable=yes --undef-value-errors=yes --track-origins=yes --num-callers=50 ./MaxRedisSim_example
 
 memcheck: CMakeFiles/memcheck
 memcheck: CMakeFiles/memcheck.dir/build.make

@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <map>
 #include <functional>
@@ -5,7 +6,8 @@
 #include <utility>
 #include <mutex>
 #include <tuple>
-
+namespace RSim
+{
 template <typename OBJ>
 class message_bus
 {
@@ -15,12 +17,12 @@ class message_bus
         static auto ins = new message_bus<OBJ>();
         return ins;
     }
-    // actually topic is not needed
+
     typedef std::function<void(void *, void *, std::string topic)> handler_f;
-    void register_handler(std::string const &name, OBJ *t, handler_f f)
+    void register_handler(std::string const &name, void *t, handler_f f)
     {
         std::lock_guard<std::mutex> lck(mtx);
-
+#if 0
         for (auto it = invokers_.begin(); it != invokers_.end(); it++)
         {
             if (std::get<1>(it->second) == t)
@@ -28,7 +30,7 @@ class message_bus
                 invokers_.erase(it);
             }
         }
-
+#endif
         (this->invokers_).emplace(name, std::make_tuple(f, t));
     }
 
@@ -40,13 +42,13 @@ class message_bus
         for (auto iter = it.first; iter != it.second; iter++)
         {
             handler_f cb;
-            OBJ *obj;
+            void *obj;
             std::tie(cb, obj) = iter->second;
             cb((void *)obj, message, name);
         }
     }
 
-    void remove_handler(std::string const &name, OBJ *t)
+    void remove_handler(std::string const &name, void *t)
     {
         std::lock_guard<std::mutex> lck(mtx);
         for (auto it = invokers_.begin(); it != invokers_.end(); it++)
@@ -59,7 +61,7 @@ class message_bus
     }
 
   private:
-    std::multimap<std::string, std::tuple<handler_f, OBJ *>> invokers_;
+    std::multimap<std::string, std::tuple<handler_f, void *>> invokers_;
     std::mutex mtx;
 };
 #if 0
@@ -86,3 +88,4 @@ int main()
     bus->call("test", (void *)0);
 }
 #endif
+}

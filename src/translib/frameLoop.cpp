@@ -37,7 +37,7 @@ uint64_t FrameLoop::curFrameRound() const
 void FrameLoop::onBeforeLoop()
 {
 	Super::onBeforeLoop();
-	_frameTimer->startForever(_frameInterval, std::bind(&FrameLoop::onFrame, this));
+	_frameTimer->startForever(_frameInterval, NULL, std::bind(&FrameLoop::onFrame, this));
 }
 
 void FrameLoop::onFrame()
@@ -45,6 +45,4 @@ void FrameLoop::onFrame()
 }
 
 } /* namespace translib */
-
-
 

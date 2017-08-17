@@ -55,7 +55,7 @@ include CMakeFiles/example.dir/progress.make
 
 CMakeFiles/example:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mcong/study/github/RedisSim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Run examples"
-	cd /home/mcong/study/github/RedisSim/build/bin && ./MaxEC_example
+	cd /home/mcong/study/github/RedisSim/build/bin && ./MaxRedisSim_example
 
 example: CMakeFiles/example
 example: CMakeFiles/example.dir/build.make

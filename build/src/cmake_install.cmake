@@ -34,9 +34,9 @@ endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   foreach(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMaxEC.so.1.0.0"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMaxEC.so.1"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMaxEC.so"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMaxRedisSim.so.1.0.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMaxRedisSim.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMaxRedisSim.so"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
@@ -46,14 +46,14 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/mcong/study/github/RedisSim/lib/libMaxEC.so.1.0.0"
-    "/home/mcong/study/github/RedisSim/lib/libMaxEC.so.1"
-    "/home/mcong/study/github/RedisSim/lib/libMaxEC.so"
+    "/home/mcong/study/github/RedisSim/lib/libMaxRedisSim.so.1.0.0"
+    "/home/mcong/study/github/RedisSim/lib/libMaxRedisSim.so.1"
+    "/home/mcong/study/github/RedisSim/lib/libMaxRedisSim.so"
     )
   foreach(file
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMaxEC.so.1.0.0"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMaxEC.so.1"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMaxEC.so"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMaxRedisSim.so.1.0.0"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMaxRedisSim.so.1"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libMaxRedisSim.so"
       )
     if(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
@@ -65,6 +65,6 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/MaxEC" TYPE DIRECTORY FILES "/home/mcong/study/github/RedisSim/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/MaxRedisSim" TYPE DIRECTORY FILES "/home/mcong/study/github/RedisSim/include/")
 endif()
 

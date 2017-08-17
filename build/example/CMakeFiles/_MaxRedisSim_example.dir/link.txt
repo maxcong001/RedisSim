@@ -1,0 +1,1 @@
+/usr/bin/c++    -g -Wall -std=c++11 -fPIC   CMakeFiles/_MaxRedisSim_example.dir/example.cpp.o  -o ../bin/MaxRedisSim_example -Wl,-rpath,/home/mcong/study/github/RedisSim/lib -rdynamic ../../lib/libMaxRedisSim.so.1.0.0 -levent -levent_pthreads 

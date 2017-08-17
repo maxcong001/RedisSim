@@ -166,343 +166,532 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/MaxEC.dir/rule:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/MaxEC.dir/rule
-.PHONY : src/CMakeFiles/MaxEC.dir/rule
+src/CMakeFiles/MaxRedisSim.dir/rule:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/MaxRedisSim.dir/rule
+.PHONY : src/CMakeFiles/MaxRedisSim.dir/rule
 
 # Convenience name for target.
-MaxEC: src/CMakeFiles/MaxEC.dir/rule
+MaxRedisSim: src/CMakeFiles/MaxRedisSim.dir/rule
 
-.PHONY : MaxEC
+.PHONY : MaxRedisSim
 
 # fast build rule for target.
-MaxEC/fast:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/build
-.PHONY : MaxEC/fast
+MaxRedisSim/fast:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/build
+.PHONY : MaxRedisSim/fast
 
-frameLoop.o: frameLoop.cpp.o
+logger/logger.o: logger/logger.cpp.o
 
-.PHONY : frameLoop.o
-
-# target to build an object file
-frameLoop.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/frameLoop.cpp.o
-.PHONY : frameLoop.cpp.o
-
-frameLoop.i: frameLoop.cpp.i
-
-.PHONY : frameLoop.i
-
-# target to preprocess a source file
-frameLoop.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/frameLoop.cpp.i
-.PHONY : frameLoop.cpp.i
-
-frameLoop.s: frameLoop.cpp.s
-
-.PHONY : frameLoop.s
-
-# target to generate assembly for a file
-frameLoop.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/frameLoop.cpp.s
-.PHONY : frameLoop.cpp.s
-
-httpRequest.o: httpRequest.cpp.o
-
-.PHONY : httpRequest.o
+.PHONY : logger/logger.o
 
 # target to build an object file
-httpRequest.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/httpRequest.cpp.o
-.PHONY : httpRequest.cpp.o
+logger/logger.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/logger/logger.cpp.o
+.PHONY : logger/logger.cpp.o
 
-httpRequest.i: httpRequest.cpp.i
+logger/logger.i: logger/logger.cpp.i
 
-.PHONY : httpRequest.i
+.PHONY : logger/logger.i
 
 # target to preprocess a source file
-httpRequest.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/httpRequest.cpp.i
-.PHONY : httpRequest.cpp.i
+logger/logger.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/logger/logger.cpp.i
+.PHONY : logger/logger.cpp.i
 
-httpRequest.s: httpRequest.cpp.s
+logger/logger.s: logger/logger.cpp.s
 
-.PHONY : httpRequest.s
+.PHONY : logger/logger.s
 
 # target to generate assembly for a file
-httpRequest.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/httpRequest.cpp.s
-.PHONY : httpRequest.cpp.s
+logger/logger.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/logger/logger.cpp.s
+.PHONY : logger/logger.cpp.s
 
-httpServer.o: httpServer.cpp.o
+redisSim/redisSim.o: redisSim/redisSim.cpp.o
 
-.PHONY : httpServer.o
+.PHONY : redisSim/redisSim.o
 
 # target to build an object file
-httpServer.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/httpServer.cpp.o
-.PHONY : httpServer.cpp.o
+redisSim/redisSim.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/redisSim.cpp.o
+.PHONY : redisSim/redisSim.cpp.o
 
-httpServer.i: httpServer.cpp.i
+redisSim/redisSim.i: redisSim/redisSim.cpp.i
 
-.PHONY : httpServer.i
+.PHONY : redisSim/redisSim.i
 
 # target to preprocess a source file
-httpServer.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/httpServer.cpp.i
-.PHONY : httpServer.cpp.i
+redisSim/redisSim.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/redisSim.cpp.i
+.PHONY : redisSim/redisSim.cpp.i
 
-httpServer.s: httpServer.cpp.s
+redisSim/redisSim.s: redisSim/redisSim.cpp.s
 
-.PHONY : httpServer.s
+.PHONY : redisSim/redisSim.s
 
 # target to generate assembly for a file
-httpServer.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/httpServer.cpp.s
-.PHONY : httpServer.cpp.s
+redisSim/redisSim.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/redisSim.cpp.s
+.PHONY : redisSim/redisSim.cpp.s
 
-loop.o: loop.cpp.o
+redisSim/simCommandServer.o: redisSim/simCommandServer.cpp.o
 
-.PHONY : loop.o
+.PHONY : redisSim/simCommandServer.o
 
 # target to build an object file
-loop.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/loop.cpp.o
-.PHONY : loop.cpp.o
+redisSim/simCommandServer.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/simCommandServer.cpp.o
+.PHONY : redisSim/simCommandServer.cpp.o
 
-loop.i: loop.cpp.i
+redisSim/simCommandServer.i: redisSim/simCommandServer.cpp.i
 
-.PHONY : loop.i
+.PHONY : redisSim/simCommandServer.i
 
 # target to preprocess a source file
-loop.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/loop.cpp.i
-.PHONY : loop.cpp.i
+redisSim/simCommandServer.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/simCommandServer.cpp.i
+.PHONY : redisSim/simCommandServer.cpp.i
 
-loop.s: loop.cpp.s
+redisSim/simCommandServer.s: redisSim/simCommandServer.cpp.s
 
-.PHONY : loop.s
+.PHONY : redisSim/simCommandServer.s
 
 # target to generate assembly for a file
-loop.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/loop.cpp.s
-.PHONY : loop.cpp.s
+redisSim/simCommandServer.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/simCommandServer.cpp.s
+.PHONY : redisSim/simCommandServer.cpp.s
 
-stub.o: stub.cpp.o
+redisSim/simConnector.o: redisSim/simConnector.cpp.o
 
-.PHONY : stub.o
+.PHONY : redisSim/simConnector.o
 
 # target to build an object file
-stub.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/stub.cpp.o
-.PHONY : stub.cpp.o
+redisSim/simConnector.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/simConnector.cpp.o
+.PHONY : redisSim/simConnector.cpp.o
 
-stub.i: stub.cpp.i
+redisSim/simConnector.i: redisSim/simConnector.cpp.i
 
-.PHONY : stub.i
+.PHONY : redisSim/simConnector.i
 
 # target to preprocess a source file
-stub.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/stub.cpp.i
-.PHONY : stub.cpp.i
+redisSim/simConnector.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/simConnector.cpp.i
+.PHONY : redisSim/simConnector.cpp.i
 
-stub.s: stub.cpp.s
+redisSim/simConnector.s: redisSim/simConnector.cpp.s
 
-.PHONY : stub.s
+.PHONY : redisSim/simConnector.s
 
 # target to generate assembly for a file
-stub.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/stub.cpp.s
-.PHONY : stub.cpp.s
+redisSim/simConnector.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/simConnector.cpp.s
+.PHONY : redisSim/simConnector.cpp.s
 
-tcpClient.o: tcpClient.cpp.o
+redisSim/simForwarder.o: redisSim/simForwarder.cpp.o
 
-.PHONY : tcpClient.o
+.PHONY : redisSim/simForwarder.o
 
 # target to build an object file
-tcpClient.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpClient.cpp.o
-.PHONY : tcpClient.cpp.o
+redisSim/simForwarder.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/simForwarder.cpp.o
+.PHONY : redisSim/simForwarder.cpp.o
 
-tcpClient.i: tcpClient.cpp.i
+redisSim/simForwarder.i: redisSim/simForwarder.cpp.i
 
-.PHONY : tcpClient.i
+.PHONY : redisSim/simForwarder.i
 
 # target to preprocess a source file
-tcpClient.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpClient.cpp.i
-.PHONY : tcpClient.cpp.i
+redisSim/simForwarder.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/simForwarder.cpp.i
+.PHONY : redisSim/simForwarder.cpp.i
 
-tcpClient.s: tcpClient.cpp.s
+redisSim/simForwarder.s: redisSim/simForwarder.cpp.s
 
-.PHONY : tcpClient.s
+.PHONY : redisSim/simForwarder.s
 
 # target to generate assembly for a file
-tcpClient.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpClient.cpp.s
-.PHONY : tcpClient.cpp.s
+redisSim/simForwarder.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/simForwarder.cpp.s
+.PHONY : redisSim/simForwarder.cpp.s
 
-tcpServer.o: tcpServer.cpp.o
+redisSim/simServer.o: redisSim/simServer.cpp.o
 
-.PHONY : tcpServer.o
+.PHONY : redisSim/simServer.o
 
 # target to build an object file
-tcpServer.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpServer.cpp.o
-.PHONY : tcpServer.cpp.o
+redisSim/simServer.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/simServer.cpp.o
+.PHONY : redisSim/simServer.cpp.o
 
-tcpServer.i: tcpServer.cpp.i
+redisSim/simServer.i: redisSim/simServer.cpp.i
 
-.PHONY : tcpServer.i
+.PHONY : redisSim/simServer.i
 
 # target to preprocess a source file
-tcpServer.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpServer.cpp.i
-.PHONY : tcpServer.cpp.i
+redisSim/simServer.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/simServer.cpp.i
+.PHONY : redisSim/simServer.cpp.i
 
-tcpServer.s: tcpServer.cpp.s
+redisSim/simServer.s: redisSim/simServer.cpp.s
 
-.PHONY : tcpServer.s
+.PHONY : redisSim/simServer.s
 
 # target to generate assembly for a file
-tcpServer.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpServer.cpp.s
-.PHONY : tcpServer.cpp.s
+redisSim/simServer.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/simServer.cpp.s
+.PHONY : redisSim/simServer.cpp.s
 
-tcpServerDispatcher.o: tcpServerDispatcher.cpp.o
+redisSim/util.o: redisSim/util.cpp.o
 
-.PHONY : tcpServerDispatcher.o
+.PHONY : redisSim/util.o
 
 # target to build an object file
-tcpServerDispatcher.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpServerDispatcher.cpp.o
-.PHONY : tcpServerDispatcher.cpp.o
+redisSim/util.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/util.cpp.o
+.PHONY : redisSim/util.cpp.o
 
-tcpServerDispatcher.i: tcpServerDispatcher.cpp.i
+redisSim/util.i: redisSim/util.cpp.i
 
-.PHONY : tcpServerDispatcher.i
+.PHONY : redisSim/util.i
 
 # target to preprocess a source file
-tcpServerDispatcher.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpServerDispatcher.cpp.i
-.PHONY : tcpServerDispatcher.cpp.i
+redisSim/util.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/util.cpp.i
+.PHONY : redisSim/util.cpp.i
 
-tcpServerDispatcher.s: tcpServerDispatcher.cpp.s
+redisSim/util.s: redisSim/util.cpp.s
 
-.PHONY : tcpServerDispatcher.s
+.PHONY : redisSim/util.s
 
 # target to generate assembly for a file
-tcpServerDispatcher.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpServerDispatcher.cpp.s
-.PHONY : tcpServerDispatcher.cpp.s
+redisSim/util.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/redisSim/util.cpp.s
+.PHONY : redisSim/util.cpp.s
 
-tcpSession.o: tcpSession.cpp.o
+translib/frameLoop.o: translib/frameLoop.cpp.o
 
-.PHONY : tcpSession.o
+.PHONY : translib/frameLoop.o
 
 # target to build an object file
-tcpSession.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpSession.cpp.o
-.PHONY : tcpSession.cpp.o
+translib/frameLoop.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/frameLoop.cpp.o
+.PHONY : translib/frameLoop.cpp.o
 
-tcpSession.i: tcpSession.cpp.i
+translib/frameLoop.i: translib/frameLoop.cpp.i
 
-.PHONY : tcpSession.i
+.PHONY : translib/frameLoop.i
 
 # target to preprocess a source file
-tcpSession.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpSession.cpp.i
-.PHONY : tcpSession.cpp.i
+translib/frameLoop.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/frameLoop.cpp.i
+.PHONY : translib/frameLoop.cpp.i
 
-tcpSession.s: tcpSession.cpp.s
+translib/frameLoop.s: translib/frameLoop.cpp.s
 
-.PHONY : tcpSession.s
+.PHONY : translib/frameLoop.s
 
 # target to generate assembly for a file
-tcpSession.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpSession.cpp.s
-.PHONY : tcpSession.cpp.s
+translib/frameLoop.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/frameLoop.cpp.s
+.PHONY : translib/frameLoop.cpp.s
 
-tcpSocket.o: tcpSocket.cpp.o
+translib/httpRequest.o: translib/httpRequest.cpp.o
 
-.PHONY : tcpSocket.o
+.PHONY : translib/httpRequest.o
 
 # target to build an object file
-tcpSocket.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpSocket.cpp.o
-.PHONY : tcpSocket.cpp.o
+translib/httpRequest.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/httpRequest.cpp.o
+.PHONY : translib/httpRequest.cpp.o
 
-tcpSocket.i: tcpSocket.cpp.i
+translib/httpRequest.i: translib/httpRequest.cpp.i
 
-.PHONY : tcpSocket.i
+.PHONY : translib/httpRequest.i
 
 # target to preprocess a source file
-tcpSocket.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpSocket.cpp.i
-.PHONY : tcpSocket.cpp.i
+translib/httpRequest.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/httpRequest.cpp.i
+.PHONY : translib/httpRequest.cpp.i
 
-tcpSocket.s: tcpSocket.cpp.s
+translib/httpRequest.s: translib/httpRequest.cpp.s
 
-.PHONY : tcpSocket.s
+.PHONY : translib/httpRequest.s
 
 # target to generate assembly for a file
-tcpSocket.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/tcpSocket.cpp.s
-.PHONY : tcpSocket.cpp.s
+translib/httpRequest.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/httpRequest.cpp.s
+.PHONY : translib/httpRequest.cpp.s
 
-timer.o: timer.cpp.o
+translib/httpServer.o: translib/httpServer.cpp.o
 
-.PHONY : timer.o
+.PHONY : translib/httpServer.o
 
 # target to build an object file
-timer.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/timer.cpp.o
-.PHONY : timer.cpp.o
+translib/httpServer.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/httpServer.cpp.o
+.PHONY : translib/httpServer.cpp.o
 
-timer.i: timer.cpp.i
+translib/httpServer.i: translib/httpServer.cpp.i
 
-.PHONY : timer.i
+.PHONY : translib/httpServer.i
 
 # target to preprocess a source file
-timer.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/timer.cpp.i
-.PHONY : timer.cpp.i
+translib/httpServer.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/httpServer.cpp.i
+.PHONY : translib/httpServer.cpp.i
 
-timer.s: timer.cpp.s
+translib/httpServer.s: translib/httpServer.cpp.s
 
-.PHONY : timer.s
+.PHONY : translib/httpServer.s
 
 # target to generate assembly for a file
-timer.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/timer.cpp.s
-.PHONY : timer.cpp.s
+translib/httpServer.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/httpServer.cpp.s
+.PHONY : translib/httpServer.cpp.s
 
-timerManager.o: timerManager.cpp.o
+translib/loop.o: translib/loop.cpp.o
 
-.PHONY : timerManager.o
+.PHONY : translib/loop.o
 
 # target to build an object file
-timerManager.cpp.o:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/timerManager.cpp.o
-.PHONY : timerManager.cpp.o
+translib/loop.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/loop.cpp.o
+.PHONY : translib/loop.cpp.o
 
-timerManager.i: timerManager.cpp.i
+translib/loop.i: translib/loop.cpp.i
 
-.PHONY : timerManager.i
+.PHONY : translib/loop.i
 
 # target to preprocess a source file
-timerManager.cpp.i:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/timerManager.cpp.i
-.PHONY : timerManager.cpp.i
+translib/loop.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/loop.cpp.i
+.PHONY : translib/loop.cpp.i
 
-timerManager.s: timerManager.cpp.s
+translib/loop.s: translib/loop.cpp.s
 
-.PHONY : timerManager.s
+.PHONY : translib/loop.s
 
 # target to generate assembly for a file
-timerManager.cpp.s:
-	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxEC.dir/build.make src/CMakeFiles/MaxEC.dir/timerManager.cpp.s
-.PHONY : timerManager.cpp.s
+translib/loop.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/loop.cpp.s
+.PHONY : translib/loop.cpp.s
+
+translib/stub.o: translib/stub.cpp.o
+
+.PHONY : translib/stub.o
+
+# target to build an object file
+translib/stub.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/stub.cpp.o
+.PHONY : translib/stub.cpp.o
+
+translib/stub.i: translib/stub.cpp.i
+
+.PHONY : translib/stub.i
+
+# target to preprocess a source file
+translib/stub.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/stub.cpp.i
+.PHONY : translib/stub.cpp.i
+
+translib/stub.s: translib/stub.cpp.s
+
+.PHONY : translib/stub.s
+
+# target to generate assembly for a file
+translib/stub.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/stub.cpp.s
+.PHONY : translib/stub.cpp.s
+
+translib/tcpClient.o: translib/tcpClient.cpp.o
+
+.PHONY : translib/tcpClient.o
+
+# target to build an object file
+translib/tcpClient.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpClient.cpp.o
+.PHONY : translib/tcpClient.cpp.o
+
+translib/tcpClient.i: translib/tcpClient.cpp.i
+
+.PHONY : translib/tcpClient.i
+
+# target to preprocess a source file
+translib/tcpClient.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpClient.cpp.i
+.PHONY : translib/tcpClient.cpp.i
+
+translib/tcpClient.s: translib/tcpClient.cpp.s
+
+.PHONY : translib/tcpClient.s
+
+# target to generate assembly for a file
+translib/tcpClient.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpClient.cpp.s
+.PHONY : translib/tcpClient.cpp.s
+
+translib/tcpServer.o: translib/tcpServer.cpp.o
+
+.PHONY : translib/tcpServer.o
+
+# target to build an object file
+translib/tcpServer.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpServer.cpp.o
+.PHONY : translib/tcpServer.cpp.o
+
+translib/tcpServer.i: translib/tcpServer.cpp.i
+
+.PHONY : translib/tcpServer.i
+
+# target to preprocess a source file
+translib/tcpServer.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpServer.cpp.i
+.PHONY : translib/tcpServer.cpp.i
+
+translib/tcpServer.s: translib/tcpServer.cpp.s
+
+.PHONY : translib/tcpServer.s
+
+# target to generate assembly for a file
+translib/tcpServer.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpServer.cpp.s
+.PHONY : translib/tcpServer.cpp.s
+
+translib/tcpServerDispatcher.o: translib/tcpServerDispatcher.cpp.o
+
+.PHONY : translib/tcpServerDispatcher.o
+
+# target to build an object file
+translib/tcpServerDispatcher.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpServerDispatcher.cpp.o
+.PHONY : translib/tcpServerDispatcher.cpp.o
+
+translib/tcpServerDispatcher.i: translib/tcpServerDispatcher.cpp.i
+
+.PHONY : translib/tcpServerDispatcher.i
+
+# target to preprocess a source file
+translib/tcpServerDispatcher.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpServerDispatcher.cpp.i
+.PHONY : translib/tcpServerDispatcher.cpp.i
+
+translib/tcpServerDispatcher.s: translib/tcpServerDispatcher.cpp.s
+
+.PHONY : translib/tcpServerDispatcher.s
+
+# target to generate assembly for a file
+translib/tcpServerDispatcher.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpServerDispatcher.cpp.s
+.PHONY : translib/tcpServerDispatcher.cpp.s
+
+translib/tcpSession.o: translib/tcpSession.cpp.o
+
+.PHONY : translib/tcpSession.o
+
+# target to build an object file
+translib/tcpSession.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpSession.cpp.o
+.PHONY : translib/tcpSession.cpp.o
+
+translib/tcpSession.i: translib/tcpSession.cpp.i
+
+.PHONY : translib/tcpSession.i
+
+# target to preprocess a source file
+translib/tcpSession.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpSession.cpp.i
+.PHONY : translib/tcpSession.cpp.i
+
+translib/tcpSession.s: translib/tcpSession.cpp.s
+
+.PHONY : translib/tcpSession.s
+
+# target to generate assembly for a file
+translib/tcpSession.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpSession.cpp.s
+.PHONY : translib/tcpSession.cpp.s
+
+translib/tcpSocket.o: translib/tcpSocket.cpp.o
+
+.PHONY : translib/tcpSocket.o
+
+# target to build an object file
+translib/tcpSocket.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpSocket.cpp.o
+.PHONY : translib/tcpSocket.cpp.o
+
+translib/tcpSocket.i: translib/tcpSocket.cpp.i
+
+.PHONY : translib/tcpSocket.i
+
+# target to preprocess a source file
+translib/tcpSocket.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpSocket.cpp.i
+.PHONY : translib/tcpSocket.cpp.i
+
+translib/tcpSocket.s: translib/tcpSocket.cpp.s
+
+.PHONY : translib/tcpSocket.s
+
+# target to generate assembly for a file
+translib/tcpSocket.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/tcpSocket.cpp.s
+.PHONY : translib/tcpSocket.cpp.s
+
+translib/timer.o: translib/timer.cpp.o
+
+.PHONY : translib/timer.o
+
+# target to build an object file
+translib/timer.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/timer.cpp.o
+.PHONY : translib/timer.cpp.o
+
+translib/timer.i: translib/timer.cpp.i
+
+.PHONY : translib/timer.i
+
+# target to preprocess a source file
+translib/timer.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/timer.cpp.i
+.PHONY : translib/timer.cpp.i
+
+translib/timer.s: translib/timer.cpp.s
+
+.PHONY : translib/timer.s
+
+# target to generate assembly for a file
+translib/timer.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/timer.cpp.s
+.PHONY : translib/timer.cpp.s
+
+translib/timerManager.o: translib/timerManager.cpp.o
+
+.PHONY : translib/timerManager.o
+
+# target to build an object file
+translib/timerManager.cpp.o:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/timerManager.cpp.o
+.PHONY : translib/timerManager.cpp.o
+
+translib/timerManager.i: translib/timerManager.cpp.i
+
+.PHONY : translib/timerManager.i
+
+# target to preprocess a source file
+translib/timerManager.cpp.i:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/timerManager.cpp.i
+.PHONY : translib/timerManager.cpp.i
+
+translib/timerManager.s: translib/timerManager.cpp.s
+
+.PHONY : translib/timerManager.s
+
+# target to generate assembly for a file
+translib/timerManager.cpp.s:
+	cd /home/mcong/study/github/RedisSim/build && $(MAKE) -f src/CMakeFiles/MaxRedisSim.dir/build.make src/CMakeFiles/MaxRedisSim.dir/translib/timerManager.cpp.s
+.PHONY : translib/timerManager.cpp.s
 
 # Help Target
 help:
@@ -517,43 +706,64 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... MaxEC"
-	@echo "... frameLoop.o"
-	@echo "... frameLoop.i"
-	@echo "... frameLoop.s"
-	@echo "... httpRequest.o"
-	@echo "... httpRequest.i"
-	@echo "... httpRequest.s"
-	@echo "... httpServer.o"
-	@echo "... httpServer.i"
-	@echo "... httpServer.s"
-	@echo "... loop.o"
-	@echo "... loop.i"
-	@echo "... loop.s"
-	@echo "... stub.o"
-	@echo "... stub.i"
-	@echo "... stub.s"
-	@echo "... tcpClient.o"
-	@echo "... tcpClient.i"
-	@echo "... tcpClient.s"
-	@echo "... tcpServer.o"
-	@echo "... tcpServer.i"
-	@echo "... tcpServer.s"
-	@echo "... tcpServerDispatcher.o"
-	@echo "... tcpServerDispatcher.i"
-	@echo "... tcpServerDispatcher.s"
-	@echo "... tcpSession.o"
-	@echo "... tcpSession.i"
-	@echo "... tcpSession.s"
-	@echo "... tcpSocket.o"
-	@echo "... tcpSocket.i"
-	@echo "... tcpSocket.s"
-	@echo "... timer.o"
-	@echo "... timer.i"
-	@echo "... timer.s"
-	@echo "... timerManager.o"
-	@echo "... timerManager.i"
-	@echo "... timerManager.s"
+	@echo "... MaxRedisSim"
+	@echo "... logger/logger.o"
+	@echo "... logger/logger.i"
+	@echo "... logger/logger.s"
+	@echo "... redisSim/redisSim.o"
+	@echo "... redisSim/redisSim.i"
+	@echo "... redisSim/redisSim.s"
+	@echo "... redisSim/simCommandServer.o"
+	@echo "... redisSim/simCommandServer.i"
+	@echo "... redisSim/simCommandServer.s"
+	@echo "... redisSim/simConnector.o"
+	@echo "... redisSim/simConnector.i"
+	@echo "... redisSim/simConnector.s"
+	@echo "... redisSim/simForwarder.o"
+	@echo "... redisSim/simForwarder.i"
+	@echo "... redisSim/simForwarder.s"
+	@echo "... redisSim/simServer.o"
+	@echo "... redisSim/simServer.i"
+	@echo "... redisSim/simServer.s"
+	@echo "... redisSim/util.o"
+	@echo "... redisSim/util.i"
+	@echo "... redisSim/util.s"
+	@echo "... translib/frameLoop.o"
+	@echo "... translib/frameLoop.i"
+	@echo "... translib/frameLoop.s"
+	@echo "... translib/httpRequest.o"
+	@echo "... translib/httpRequest.i"
+	@echo "... translib/httpRequest.s"
+	@echo "... translib/httpServer.o"
+	@echo "... translib/httpServer.i"
+	@echo "... translib/httpServer.s"
+	@echo "... translib/loop.o"
+	@echo "... translib/loop.i"
+	@echo "... translib/loop.s"
+	@echo "... translib/stub.o"
+	@echo "... translib/stub.i"
+	@echo "... translib/stub.s"
+	@echo "... translib/tcpClient.o"
+	@echo "... translib/tcpClient.i"
+	@echo "... translib/tcpClient.s"
+	@echo "... translib/tcpServer.o"
+	@echo "... translib/tcpServer.i"
+	@echo "... translib/tcpServer.s"
+	@echo "... translib/tcpServerDispatcher.o"
+	@echo "... translib/tcpServerDispatcher.i"
+	@echo "... translib/tcpServerDispatcher.s"
+	@echo "... translib/tcpSession.o"
+	@echo "... translib/tcpSession.i"
+	@echo "... translib/tcpSession.s"
+	@echo "... translib/tcpSocket.o"
+	@echo "... translib/tcpSocket.i"
+	@echo "... translib/tcpSocket.s"
+	@echo "... translib/timer.o"
+	@echo "... translib/timer.i"
+	@echo "... translib/timer.s"
+	@echo "... translib/timerManager.o"
+	@echo "... translib/timerManager.i"
+	@echo "... translib/timerManager.s"
 .PHONY : help
 
 

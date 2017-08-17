@@ -23,8 +23,10 @@ class Timer;
 class TimerManager
 {
   public:
+	typedef std::unordered_map<int, Timer::ptr_p> timer_map;
 	TimerManager() : _loop()
 	{
+		uniqueID_atomic = 0;
 		init();
 	}
 	~TimerManager()
@@ -39,6 +41,7 @@ class TimerManager
 	bool init();
 	Timer::ptr_p getTimer(int *timerID = NULL);
 	bool killTimer(int timerID);
+	bool audit();
 
 	TimerManager *Instance()
 	{
@@ -54,7 +57,7 @@ class TimerManager
 	}
 
 	std::atomic<int> uniqueID_atomic;
-	std::unordered_map<int, Timer::ptr_p> t_map;
+	timer_map t_map;
 	std::mutex mtx;
 	Loop _loop;
 	Timer *audit_timer;

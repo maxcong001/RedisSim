@@ -20,7 +20,7 @@ class Timer
 {
   public:
 	/** @brief callback fuction */
-	typedef std::function<void()> Handler;
+	typedef std::function<void(void *)> Handler;
 	typedef std::shared_ptr<Timer> ptr_p;
 
   public:
@@ -33,21 +33,21 @@ class Timer
 	 * @param round 
 	 * @param handler callback function
 	 */
-	bool startRounds(uint32_t interval, uint64_t round, translib::Timer::Handler handler);
+	bool startRounds(uint32_t interval, uint64_t round, void *usrdata, translib::Timer::Handler handler);
 
 	/**
 	 * @brief 
 	 * @param interval ms
 	 * @param handler callback fuction
 	 */
-	bool startOnce(uint32_t interval, translib::Timer::Handler handler);
+	bool startOnce(uint32_t interval, void *usrdata, translib::Timer::Handler handler);
 
 	/**
 	 * @brief 
 	 * @param interval ms
 	 * @param handler callback function
 	 */
-	bool startForever(uint32_t interval, translib::Timer::Handler handler);
+	bool startForever(uint32_t interval, void *usrdata, translib::Timer::Handler handler);
 
 	/**
 	 * @brief 
@@ -60,6 +60,7 @@ class Timer
 		uint32_t after,
 		uint32_t interval,
 		uint64_t round,
+		void *usrdata,
 		translib::Timer::Handler handler);
 
 	/** get timer interval */
@@ -101,6 +102,7 @@ class Timer
 	uint64_t _round;
 	uint64_t _curRound;
 	translib::Timer::Handler _handler;
+	void *_usrdata;
 };
 
 } /* namespace translib */
